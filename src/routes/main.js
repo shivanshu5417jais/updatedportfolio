@@ -33,7 +33,7 @@ routes.get("/gallery",async (req,res)=>{
 })
 
 routes.post("/process-contact-form",async(req,res)=>{
-    console.log("Form is sumitted.");
+    console.log("Form is sumitted");
     console.log(req.body);
     try{
 const data=await Contact.create(req.body)
