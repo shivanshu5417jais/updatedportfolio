@@ -1,6 +1,7 @@
 var words = [
-    "I'm a full stack(MEAN/MERN) Software developer.",
-    "I am a Web Designer",
+    "I'm a MEAN Stack developer.",
+    "I'm a MERN Stack developer",
+    "I'm a Software Engineer",
   ],
   part,
   i = 0,
