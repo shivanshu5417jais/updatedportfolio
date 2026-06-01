@@ -1,13 +1,15 @@
-
-var words = ["I'm a MEAN stack developer.", 'I am a Web Designer'],
-    part,
-    i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 15,
-    speed = 70;
+var words = [
+    "I'm a full stack(MEAN/MERN) Software developer.",
+    "I am a Web Designer",
+  ],
+  part,
+  i = 0,
+  offset = 0,
+  len = words.length,
+  forwards = true,
+  skip_count = 0,
+  skip_delay = 15,
+  speed = 70;
 var wordflick = function () {
   setInterval(function () {
     if (forwards) {
@@ -18,8 +20,7 @@ var wordflick = function () {
           skip_count = 0;
         }
       }
-    }
-    else {
+    } else {
       if (offset == 0) {
         forwards = true;
         i++;
@@ -33,16 +34,13 @@ var wordflick = function () {
     if (skip_count == 0) {
       if (forwards) {
         offset++;
-      }
-      else {
+      } else {
         offset--;
       }
     }
-    if(!part)
-    $('.word').text("&")
-    else
-    $('.word').text(part);
-  },speed);
+    if (!part) $(".word").text("&");
+    else $(".word").text(part);
+  }, speed);
 };
 
 $(document).ready(function () {
